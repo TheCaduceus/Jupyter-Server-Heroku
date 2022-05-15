@@ -12,6 +12,7 @@ RUN apt install unzip -y
 RUN pip install jupyter_http_over_ws
 RUN jupyter serverextension enable --py jupyter_http_over_ws
 RUN apt update -y
+RUN apt install git -y
 # Add other pakages before deployment 
 # RUN apt install <your-pakage> -y
 RUN mkdir /JupyterNotebooks
