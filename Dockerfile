@@ -12,12 +12,6 @@ RUN apt install unzip -y
 RUN pip install jupyter_http_over_ws
 RUN jupyter serverextension enable --py jupyter_http_over_ws
 RUN apt update -y
-RUN apt install apt-transport-https ca-certificates -y
-RUN wget -qO- 'https://dl.cloudsmith.io/public/qbittorrent-cli/qbittorrent-cli/gpg.F8756541ADDA2B7D.key' | apt-key add -
-RUN wget -q https://repos.fedarovich.com/debian/stretch/qbittorrent-cli.list
-RUN mv qbittorrent-cli.list /etc/apt/sources.list.d/
-RUN apt update -y
-RUN apt install qbittorrent-cli -y
 # Add other pakages before deployment 
 # RUN apt install <your-pakage> -y
 RUN mkdir /JupyterNotebooks
