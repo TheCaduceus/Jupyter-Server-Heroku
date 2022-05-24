@@ -11,6 +11,7 @@ RUN apt install pip -y
 RUN apt install unzip -y
 RUN pip install jupyter_http_over_ws
 RUN jupyter serverextension enable --py jupyter_http_over_ws
+RUN jupyter notebook --NotebookApp.allow_origin='https://colab.research.google.com'--no-browser
 RUN apt update -y
 RUN apt install git -y
 # Add other pakages before deployment 
