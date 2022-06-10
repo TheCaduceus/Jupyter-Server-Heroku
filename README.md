@@ -2,7 +2,7 @@
 
 * password disabled
 * One Click rapid deployment
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/developeranaz/heroku-jupyter-BETA)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/TheCaduceus/Jupyter-Server-Heroku)
 
 No time to Update Readme - Please post issues
 
